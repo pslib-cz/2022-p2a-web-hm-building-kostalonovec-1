@@ -1,0 +1,97 @@
+:root{
+    --primary: #EB6C27;
+    --text: #3a3a3a;
+    --bg: #FFFFFF;
+    --text--gray: #888888;
+}
+
+.article__background__image{
+    background-image: url("../Media/background-CTAblock-4460w.jpg");
+    min-height: 300px;
+}
+
+article{
+    padding: 20px;
+}
+
+footer{
+    background-color: var(--primary);
+    padding: 20px;
+}
+
+h2 span{
+    color: var(--primary);
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 100%;
+    height: auto;
+
+    display: block;
+    padding: 0;
+    margin: 0;
+    object-fit: cover;
+}
+
+header h1{
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    padding: 20px;
+}
+
+header p{
+    position: absolute;
+    bottom: 5%;
+    padding: 20px;
+}
+
+header {
+    position: relative;
+}
+
+main{
+}
+
+.image__left{
+    border-radius: 0px 0px 40px 0px;
+}
+
+.image__right{
+    border-radius: 0px 0px 40px 0px;
+}
+
+.button__outline {
+    background:none;
+    border:none;
+    outline-style: dashed;
+    color: var(--primary);
+    margin:0;
+    padding:0;
+    cursor: pointer;
+    width: 170px;
+    height: 40px;
+}
+
+.button__normal{
+    background-color: var(--primary);
+    cursor:pointer;
+    border:none;
+    width: 170px;
+    height: 41px;
+}
+
+.button__footer{
+    background-color: var(--bg);
+    cursor:pointer;
+    border:none;
+    width: 340px;
+    height: 80px;
+
+}
