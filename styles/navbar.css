@@ -1,11 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 
-:root{
-    --primary: #EB6C27;
-    --text: #3a3a3a;
-    --bg: #FFFFFF;
-    --text--gray: #888888;
-}
 
 nav{
     display: flex;

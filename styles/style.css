@@ -109,5 +109,29 @@ main{
 }
 
 .centrovani__textu{
+    text-align: center;
+}
+
+.centrovani__elementu{
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.odrazky__oranzove{
+    list-style: none;
+}
+
+.odrazky__oranzove li::before {
+    content: "\2022";
+    color: red;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.article--reference {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }

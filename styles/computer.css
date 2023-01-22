@@ -4,4 +4,33 @@
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 0 100px;
     }
+    .obrazky__reference{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    nav{
+        position: absolute;
+        background-color: var(--bg);
+        margin: 20px;
+        min-width: calc(100% - 70px);
+    }
+
+    .reference--overlay  {
+        background: rgba(235, 108, 39, 0.9);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        visibility: hidden;
+        pointer-events: none;
+        display: flex;
+        justify-content: center;
+        gap: 6px;
+        flex-direction: column;
+    }
+
+    a:hover ~ .reference--overlay, a:has(img:hover) ~ .reference--overlay, .reference--overlay:hover{
+        visibility: visible;
+    }
 }
