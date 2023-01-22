@@ -8,6 +8,7 @@
 .article__background__image{
     background-image: url("../Media/background-CTAblock-4460w.jpg");
     min-height: 300px;
+    color: var(--bg);
 }
 
 article{
@@ -17,6 +18,12 @@ article{
 footer{
     background-color: var(--primary);
     padding: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 h2 span{
@@ -34,22 +41,26 @@ img{
     display: block;
     padding: 0;
     margin: 0;
-    object-fit: cover;
+    /*object-fit: cover;*/
 }
 
 header h1{
     position: absolute;
     bottom: 10%;
-    left: 0;
-    right: 0;
-    margin-left: auto;
     padding: 20px;
+
+    width: calc(100% - 40px);
+    text-align: center;
+    color: var(--bg);
 }
 
 header p{
     position: absolute;
     bottom: 5%;
     padding: 20px;
+    width: calc(100% - 40px);
+    text-align: center;
+    color: var(--bg);
 }
 
 header {
@@ -64,7 +75,7 @@ main{
 }
 
 .image__right{
-    border-radius: 0px 0px 40px 0px;
+    border-radius: 0px 0px 0px 40px;
 }
 
 .button__outline {
@@ -85,6 +96,7 @@ main{
     border:none;
     width: 170px;
     height: 41px;
+    color: white;
 }
 
 .button__footer{
@@ -93,5 +105,9 @@ main{
     border:none;
     width: 340px;
     height: 80px;
+    color: var(--primary);
+}
 
+.centrovani__textu{
+    display: flex;
 }
