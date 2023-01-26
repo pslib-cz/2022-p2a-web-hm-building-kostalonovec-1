@@ -1,6 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway);
-
-
 nav{
     display: flex;
     flex-direction: row;
@@ -63,7 +60,7 @@ menu > li {
 }
 
 #menu-toggle:checked + .menu-button-container .menu-button::before {
-    margin-top: 0px;
+    margin-top: 0;
     transform: rotate(405deg);
 }
 
@@ -72,7 +69,7 @@ menu > li {
 }
 
 #menu-toggle:checked + .menu-button-container .menu-button::after {
-    margin-top: 0px;
+    margin-top: 0;
     transform: rotate(-405deg);
 }
 
@@ -107,14 +104,10 @@ menu > li {
         justify-content: center;
         margin: 0;
         padding: 0.5em 0;
-        width: 100%;
-        color: white;
+        width: calc(100% - 40px);
         background-color: var(--primary);
     }
     menu > li:not(:last-child) {
         border-bottom: 1px solid #444;
     }
 }
-
-
-
