@@ -20,6 +20,9 @@ menu > li {
     margin: 0 1rem;
     overflow: hidden;
 }
+menu > li > a{
+    text-decoration: none;
+}
 
 .logo{
     max-width: 40%;
@@ -32,14 +35,17 @@ menu > li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 #menu-toggle {
     display: none;
 }
 
+
 .menu-button,
 .menu-button::before,
 .menu-button::after {
+    background: linear-gradient(90deg, #EB6C27 0%, #FFBE9A 100%);
     display: block;
     background-color: black;
     position: absolute;
@@ -47,6 +53,7 @@ menu > li {
     width: 30px;
     transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
     border-radius: 2px;
+    position: absolute;
 }
 
 .menu-button::before {
@@ -54,23 +61,16 @@ menu > li {
     margin-top: -8px;
 }
 
+.menu-button > p{
+    position: absolute;
+    right: 20px;
+    top: -70px;
+    color: darkorange;
+}
+
 .menu-button::after {
     content: "";
     margin-top: 8px;
-}
-
-#menu-toggle:checked + .menu-button-container .menu-button::before {
-    margin-top: 0;
-    transform: rotate(405deg);
-}
-
-#menu-toggle:checked + .menu-button-container .menu-button {
-    background: rgba(255, 255, 255, 0);
-}
-
-#menu-toggle:checked + .menu-button-container .menu-button::after {
-    margin-top: 0;
-    transform: rotate(-405deg);
 }
 
 @media (max-width: 700px) {

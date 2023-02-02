@@ -118,6 +118,7 @@ header {
 
 .odrazky__oranzove{
     list-style: none;
+    padding: 1em;
 }
 
 .odrazky__oranzove li::before {
@@ -129,7 +130,8 @@ header {
     margin-left: -1em;
 }
 
-.article--reference {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+
+.velky_a_tucny{
+    font-size: 22px;
 }
+

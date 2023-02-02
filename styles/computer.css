@@ -30,7 +30,50 @@
         flex-direction: column;
     }
 
-    a:hover ~ .reference--overlay, a:has(img:hover) ~ .reference--overlay, .reference--overlay:hover{
-        visibility: visible;
+    .hover__efect{
+        position: relative;
     }
+
+    .hover__efect:hover > aside{
+        background-color: red;
+    }
+    .centrovani__textu{
+        position: relative;
+    }
+
+    .overlay {
+        background-color: orange;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+    }
+
+    .centrovani__textu:hover .overlay {
+        opacity: 1;
+    }
+    section{
+        margin: 125px;
+    }
+    .section__without__space{
+        margin: 0;
+    }
+
+    .article__with__image right{
+        grid-column-start: 2;
+    }
+    .odrazky__oranzove{
+        list-style: none;
+        padding-left: 50px;
+    }
+    .article--reference {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
 }
