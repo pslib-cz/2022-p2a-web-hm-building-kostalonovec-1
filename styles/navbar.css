@@ -21,7 +21,8 @@ menu > li {
     overflow: hidden;
 }
 menu > li > a{
-    text-decoration: none;
+    color: white;
+    text-decoration: underline;
 }
 
 .logo{
@@ -48,11 +49,9 @@ menu > li > a{
     background: linear-gradient(90deg, #EB6C27 0%, #FFBE9A 100%);
     display: block;
     background-color: black;
-    position: absolute;
     height: 4px;
-    width: 30px;
+    width: 46px;
     transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    border-radius: 2px;
     position: absolute;
 }
 

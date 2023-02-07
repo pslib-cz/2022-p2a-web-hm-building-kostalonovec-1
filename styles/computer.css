@@ -1,7 +1,7 @@
 @media (min-width:801px){
     .article__with__image{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        /*two columns in flex*/
         grid-gap: 0 100px;
     }
     .obrazky__reference{
@@ -75,5 +75,22 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
+
+    /*flex reverse*/
+    .reverse{
+        flex-direction: row-reverse;
+    }
+
+    aside{
+        flex: 1;
+    }
+    .hlavni_obsah{
+        flex:1;
+    }
+    menu > li > a{
+        color: #888888;
+        text-decoration: none;
+    }
+
 
 }

@@ -42,6 +42,8 @@ img{
     padding: 0;
     margin: 0;
     /*object-fit: cover;*/
+
+
 }
 
 header h1{
@@ -133,5 +135,9 @@ header {
 
 .velky_a_tucny{
     font-size: 22px;
+}
+
+.shadow{
+
 }
 
