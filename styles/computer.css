@@ -92,5 +92,10 @@
         text-decoration: none;
     }
 
+    .article__background__image{
+        padding-left: 145px;
+        padding-right: 145px;
+    }
+
 
 }

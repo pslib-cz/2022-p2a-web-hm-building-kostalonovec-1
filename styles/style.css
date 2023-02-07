@@ -71,11 +71,11 @@ header {
 
 
 .image__left{
-    border-radius: 0px 0px 40px 0px;
+    border-radius: 0 0 40px 0;
 }
 
 .image__right{
-    border-radius: 0px 0px 0px 40px;
+    border-radius: 0 0 0 40px;
 }
 
 .button__outline {
@@ -138,6 +138,6 @@ header {
 }
 
 .shadow{
-
+    background: linear-gradient(0deg, rgba(36, 36, 36, 0.4), rgba(36, 36, 36, 0.4)), linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #42332A 0%, rgba(255, 255, 255, 0) 100%)
 }
 

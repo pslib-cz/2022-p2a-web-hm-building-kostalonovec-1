@@ -4,7 +4,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     height: 50px;
-    padding: 1em;
+    padding: 20px;
 }
 
 menu {
@@ -49,7 +49,7 @@ menu > li > a{
     background: linear-gradient(90deg, #EB6C27 0%, #FFBE9A 100%);
     display: block;
     background-color: black;
-    height: 4px;
+    height: 8px;
     width: 46px;
     transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
     position: absolute;
@@ -57,7 +57,7 @@ menu > li > a{
 
 .menu-button::before {
     content: "";
-    margin-top: -8px;
+    margin-top: -13px;
 }
 
 .menu-button > p{
@@ -69,7 +69,7 @@ menu > li > a{
 
 .menu-button::after {
     content: "";
-    margin-top: 8px;
+    margin-top: 13px;
 }
 
 @media (max-width: 700px) {
@@ -109,4 +109,12 @@ menu > li > a{
     menu > li:not(:last-child) {
         border-bottom: 1px solid #444;
     }
+}
+
+@media (min-width: 1920px) {
+    nav{
+        margin: 40px;
+        min-width: calc(100% - 110px);
+    }
+
 }
