@@ -4,7 +4,8 @@ nav{
     align-items: center;
     justify-content: space-between;
     height: 50px;
-    padding: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
     background-color: var(--bg);
 }
 
@@ -18,7 +19,7 @@ menu {
 }
 
 menu > li {
-    margin: 0 1rem;
+    padding: 0 1rem;
     overflow: hidden;
     height: 90px;
     width: 90px;
@@ -29,6 +30,9 @@ menu > li {
 
 menu > li:hover {
 background-color: var(--primary);
+    transition: 300ms;
+}
+menu > li:hover a{
     color: var(--bg);
     transition: 300ms;
 }
@@ -37,13 +41,21 @@ menu > li > a{
     text-decoration: underline;
 }
 
+.a__active{
+    color: var(--bg);
+}
+
+.li__active{
+    background-color: var(--primary);
+}
+
 .logo{
     max-width: 40%;
 }
 .menu-button-container {
     display: none;
     height: 100%;
-    width: 30px;
+    width: 70px;
     cursor: pointer;
     flex-direction: column;
     justify-content: center;
