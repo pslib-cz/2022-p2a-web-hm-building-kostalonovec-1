@@ -20,6 +20,17 @@ menu {
 menu > li {
     margin: 0 1rem;
     overflow: hidden;
+    height: 90px;
+    width: 90px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+menu > li:hover {
+background-color: var(--primary);
+    color: var(--bg);
+    transition: 300ms;
 }
 menu > li > a{
     color: var(--bg);
@@ -71,6 +82,10 @@ menu > li > a{
 .menu-button::after {
     content: "";
     margin-top: 13px;
+}
+
+.menu:hover{
+    background-color: var(--primary);
 }
 
 @media (max-width: 700px) {

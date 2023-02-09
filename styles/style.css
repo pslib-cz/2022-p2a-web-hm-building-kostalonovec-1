@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 :root{
     --primary: #EB6C27;
     --text: #3a3a3a;
@@ -154,6 +157,9 @@ header{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.header___main__page{
     height: 50vh;
 }
-/*hover effect*/
+
