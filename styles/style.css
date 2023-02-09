@@ -6,7 +6,8 @@
 }
 
 .article__background__image{
-    background-image: url("../Media/background-CTAblock-4460w.jpg");
+    background: linear-gradient(0deg, rgba(36, 36, 36, 0.8), rgba(36, 36, 36, 0.8)), linear-gradient(180deg, rgba(66, 51, 42, 0.4) 0%, rgba(255, 255, 255, 0) 100%), url(../Media/background-CTAblock-4460w.jpg);
+    background-size: cover;
     min-height: 300px;
     color: var(--bg);
 }
@@ -18,7 +19,7 @@ article{
 footer{
     background-color: var(--primary);
     padding: 20px;
-    color: white;
+    color: var(--bg);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,7 +42,7 @@ img{
     display: block;
     padding: 0;
     margin: 0;
-    /*object-fit: cover;*/
+    object-fit: cover;
 
 
 }
@@ -50,7 +51,6 @@ header h1{
     position: absolute;
     bottom: 10%;
     padding: 20px;
-
     width: calc(100% - 40px);
     text-align: center;
     color: var(--bg);
@@ -96,7 +96,7 @@ header {
     border:none;
     width: 170px;
     height: 41px;
-    color: white;
+    color: var(--bg);
 }
 
 .button__footer{
@@ -125,7 +125,7 @@ header {
 
 .odrazky__oranzove li::before {
     content: "\2022";
-    color: red;
+    color: var(--primary);
     font-weight: bold;
     display: inline-block;
     width: 1em;
@@ -137,7 +137,23 @@ header {
     font-size: 22px;
 }
 
-.shadow{
-    background: linear-gradient(0deg, rgba(36, 36, 36, 0.4), rgba(36, 36, 36, 0.4)), linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #42332A 0%, rgba(255, 255, 255, 0) 100%)
+
+.button__header{
+    font-size: 0;
+
 }
 
+section{
+    padding-bottom: 40px;
+}
+
+header{
+    background: linear-gradient(0deg, rgba(36, 36, 36, 0.4), rgba(36, 36, 36, 0.4)), linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #42332A 0%, rgba(255, 255, 255, 0) 100%), url("../Media/pageheader-1920w.jpg");
+    background-blend-mode: normal, normal, hue, normal;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50vh;
+}
+/*hover effect*/

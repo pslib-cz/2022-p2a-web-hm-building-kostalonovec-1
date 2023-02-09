@@ -5,6 +5,7 @@ nav{
     justify-content: space-between;
     height: 50px;
     padding: 20px;
+    background-color: var(--bg);
 }
 
 menu {
@@ -21,7 +22,7 @@ menu > li {
     overflow: hidden;
 }
 menu > li > a{
-    color: white;
+    color: var(--bg);
     text-decoration: underline;
 }
 
@@ -48,7 +49,7 @@ menu > li > a{
 .menu-button::after {
     background: linear-gradient(90deg, #EB6C27 0%, #FFBE9A 100%);
     display: block;
-    background-color: black;
+    background-color: var(--text);
     height: 8px;
     width: 46px;
     transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
@@ -64,7 +65,7 @@ menu > li > a{
     position: absolute;
     right: 20px;
     top: -70px;
-    color: darkorange;
+    color: var(--text);
 }
 
 .menu-button::after {
@@ -100,7 +101,7 @@ menu > li > a{
     }
     menu > li {
         display: flex;
-        justify-content: center;
+        justify-content: left;
         margin: 0;
         padding: 0.5em 0;
         width: calc(100% - 40px);
@@ -108,6 +109,17 @@ menu > li > a{
     }
     menu > li:not(:last-child) {
         border-bottom: 1px solid #444;
+    }
+    #menu-toggle:checked ~ menu::before{
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: 14px solid transparent;
+        border-right: 14px solid transparent;
+        border-bottom: 20px solid var(--primary);
+        top: -19px;
+        right: 20px;
+        position: absolute;
     }
 }
 
