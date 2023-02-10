@@ -1,6 +1,11 @@
 html {
     scroll-behavior: smooth;
 }
+body
+{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
 :root{
     --primary: #EB6C27;
     --text: #3a3a3a;
@@ -88,14 +93,12 @@ header {
     color: var(--primary);
     margin:0;
     padding:0;
-    cursor: pointer;
     width: 170px;
     height: 40px;
 }
 
 .button__normal{
     background-color: var(--primary);
-    cursor:pointer;
     border:none;
     width: 170px;
     height: 41px;
@@ -104,7 +107,6 @@ header {
 
 .button__footer{
     background-color: var(--bg);
-    cursor:pointer;
     border:none;
     width: 340px;
     height: 80px;
@@ -136,11 +138,6 @@ header {
 }
 
 
-.velky_a_tucny{
-    font-size: 22px;
-}
-
-
 .button__header{
     font-size: 0;
 
@@ -162,25 +159,45 @@ header{
 .header___main__page{
     height: 50vh;
 }
-.obrazky__reference > article:hover .overlay{
-    position: absolute;
-    background-color: var(--primary);
-    opacity: 0.8;
-    width: calc(100% - 40px);
-    height: calc(100% - 40px);
-    top: 20px;
-    color: var(--bg);
-    font-size:20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
+
+
+button > a{
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
+}
 
 .overlay{
-    width: 0;
-    height: 0;
-    font-size: 0;
     text-decoration: none;
+    color: var(--text)
+}
+
+.velky_a_tucny{
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.span__orange{
+    color: var(--primary)
+}
+
+.index__h1{
+    font-size: 2em;
+}
+
+.button__outline > a{
+    color: var(--primary)
+}
+
+
+.velky_a_tucny{
+    font-size: 2em;
+}
+
+.nadpis__h1__other__page{
+    font-size: 60px;
 }
 
 

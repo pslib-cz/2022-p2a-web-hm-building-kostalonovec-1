@@ -85,16 +85,46 @@
     .header___main__page{
         height: 100vh;
     }
+    .center__text__on__pc{
+        text-align: center;
 
-
-
-    .overlay_2 {
-        /*   top: 0;
-          right: 0;
-          left: 0;
-          bottom: 0; */
-        inset: 0;
     }
+    .obrazky__reference > article:hover .overlay{
+        position: absolute;
+        background-color: var(--primary);
+        opacity: 0.8;
+        width: calc(100% - 40px);
+        height: calc(100% - 40px);
+        top: 20px;
+        color: var(--bg);
+        font-size:20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; }
+
+    .overlay{
+        width: 0;
+        height: 0;
+        font-size: 0;
+    }
+
+    .index__h1{
+        font-size: 120px;
+    }
+
+    .velky_a_tucny{
+        font-size: 3em;
+    }
+
+    .article__background__image > p{
+        font-size: 1.5em;
+    }
+
+    .article__title{
+        margin: 125px;
+    }
+
 
 
 
