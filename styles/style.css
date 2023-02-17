@@ -201,6 +201,64 @@ button{
 }
 
 
+label {
+    font-weight: 800;
+}
 
+input[type=text], select, textarea {
+    font-weight: 800;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #EB6C27;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
 
+input[type=submit] {
+    background-color: #EB6C27;
+    color: white;
+    border: none;
+    cursor: pointer;
+    min-width: 19em;
+    padding: 1.5em;
+}
 
+input[type=submit]:hover {
+    background-color: #c9571a;
+}
+
+.contacts__description::before {
+    position: absolute;
+    content: '';
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: #EB6C27;
+}
+
+.icon-dot::before {
+    position: absolute;
+    z-index: 1;
+}
+
+.icon-dot--phone::before {
+    top: -3px;
+    content: url("../images/local_phone_24px.svg");
+
+}
+.icon-dot--mail::before {
+    content: url("../images/mail_24px.svg");
+}
+.icon-dot--position::before {
+    content: url("../images/room_24px.svg");
+    left: -37px;
+    bottom: -3px;
+}
+
+.contact__icons{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
