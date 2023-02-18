@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -45,7 +45,7 @@
             <a href="https://en.mapy.cz/s/hacahelupa" class="contacts__description"><span class="icon-dot icon-dot--position"></span>Křižanská 12, Liberec XXII-Horní Suchá</a>
         </div>
     <div class="map">
-    <img src="Media/mapa.jpg">
+    <img src="Media/mapa.jpg" alt="mapa">
     </div>
     <form>
         <p>Nezávazná poptávka služeb</p>
@@ -53,9 +53,9 @@
         </p>
         <label for="fname">Jméno a příjmení:</label><br>
         <input type="text" id="fname" name="fname"><br>
-        <label for="fname">E-mail:</label><br>
+        <label for="hovno">E-mail:</label><br>
         <input type="text" id="hovno" name="fname"><br>
-        <label for="fname">Telefon:</label><br>
+        <label for="telefon">Telefon:</label><br>
         <input type="text" id="telefon" name="fname"><br>
         <label for="category">Kategorie:</label><br>
         <select id="category" name="category">
@@ -63,7 +63,9 @@
             <option value="Ozzy je powerlifter">Ozzy</option>
             <option value="Kryčfalušij">Hanička Zagorova</option>
         </select><br>
-        <textarea name="message" rows="10" cols="30">Preferuji brunety oproti blondýnám</textarea>
+        <label>
+            <textarea  name="message" rows="10" cols="30">Preferuji brunety oproti blondýnám</textarea>
+        </label>
         <input class="button" type="submit" value="Odeslat nezávaznou poptávku">
     </form>
     </section>

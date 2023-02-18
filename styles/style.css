@@ -236,13 +236,15 @@ input[type=submit]:hover {
     height: 2.5rem;
     width: 2.5rem;
     background-color: #EB6C27;
+    left: -3em;
+    top: -0.5em;
 }
 
 .icon-dot::before {
     position: absolute;
     z-index: 1;
 }
-
+/*
 .icon-dot--phone::before {
     top: -3px;
     content: url("../images/local_phone_24px.svg");
@@ -256,9 +258,14 @@ input[type=submit]:hover {
     left: -37px;
     bottom: -3px;
 }
-
+*/
 .contact__icons{
     display: flex;
     flex-direction: column;
     gap: 2em;
+    margin: 3em;
+}
+
+.contacts__description{
+    position: relative;
 }
