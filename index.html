@@ -1,9 +1,10 @@
+<!DOCTYPE html>
 <html lang="cs">
     <head>
         <title>Klasicický obchod s nemovitostmi</title>
     <meta charset="UTF-8">
     <link href="https://icons8.com/icon/95284/apple" rel="apple-touch-icon">
-    <meta name="destription" content="Stránka, u které budete totálně rožhavení z nemovitostí, které vám uděláme">
+    <meta name="description" content="Stránka, u které budete totálně rožhavení z nemovitostí, které vám uděláme">
     <meta name="author" content="Jan Sebastián Kostlán">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/style.css">
@@ -38,8 +39,7 @@
             </menu>
         </nav>
 
-        <h1 class="index__h1">Hm Building.cz s.r.o</h1>
-        <p>Liberecká stavební společnost</p>
+        <h1 class="index__h1">Hm Building.cz s.r.o <label>Liberecká stavební společnost</label></h1>
     </header>
 
     <main>
@@ -60,19 +60,23 @@
             <h2>Novostavby</h2>
             <p>Dle požadavků investora jsme schopní dodat kompletní stavbu na klíč, případně zhotovit ucelenou část. Jsme schopni zajistit také projektovou dokumentaci.</p>
             <p> Provádíme stavby jak průmyslového typu, tak rodinné stavby.</p>
-                <button class="button__outline"><a href="sluzba_novostavby.html">Zobrazit více</a></button>
+                <button onclick="window.location.href='sluzba_novostavby.html';" class="button__outline">Zobrazit více</button>
             </div>
         </article>
 
         <article class="article__with__image reverse">
             <aside>
-                <img class="image__right" src="./Media/sluzba-prumyslove-stavby-1920w.jpg" alt="novostavby">
+                <img srcset="Media/sluzba-prumyslove-stavby-1920w_mobil.jpg 560w, Media/sluzba-prumyslove-stavby-1920w.jpg 1920w"
+                     sizes="(max-width: 800px) 100vw, 800px"
+                     class="image__right"
+                     src="./Media/sluzba-prumyslove-stavby-1920w.jpg"
+                     alt="průmyslové stavby">
             </aside>
             <div class="hlavni_obsah">
                 <h2>Průmyslové stavby</h2>
                 <p>Dle požadavků investora jsme schopní dodat kompletní stavbu na klíč, případně zhotovit ucelenou část. Jsme schopni zajistit také projektovou dokumentaci. </p>
                 <p>Provádíme stavby jak průmyslového typu, tak rodinné stavby.</p>
-                 <button class="button__outline"><a href="sluzba_prumyslove_stavby.html">Zobrazit více</a></button>
+                 <button onclick="window.location.href='sluzba_prumyslove_stavby.html';" class="button__outline">Zobrazit více</button>
             </div>
 
 
@@ -85,7 +89,7 @@
             <div class="hlavni_obsah">
             <h2>Rekonstrukce domů a jiných staveb</h2>
             <p>Provádíme veškeré práce spojené s rekonstrukcí stávajících objektů. Pro naše klienty zajišťujeme dodatečné izolování objektů, zateplení objektů, změnu vnitřních i vnějších dispozic stávajících objektů a demolice stávajících staveb.</p>
-                <button class="button__outline"><a href="sluzba_rekonstrukce.html">Zobrazit více</a></button>
+                <button onclick="window.location.href='sluzba_rekonstrukce.html';" class="button__outline">Zobrazit více</button>
                 </div>
 
         </article>
@@ -96,7 +100,7 @@
             <div class="hlavni_obsah">
                 <h2>Komunikace a zpevnění plochy</h2>
                 <p>Komunikace a zpevněné plochy provádíme včetně zemních prací, konstrukcí podkladních a souvisejících objektů, jako jsou odvodnění, zpevnění svahů, opěrné zdi atd.</p>
-                <button class="button__outline"><a href="sluzba_komunikace.html">Zobrazit více</a></button>
+                <button onclick="window.location.href='sluzba_komunikace.html';" class="button__outline">Zobrazit více</button>
             </div>
 
 
@@ -108,7 +112,7 @@
         <article class="article__background__image">
             <p>Naše firma nabízí své služby ve stavebnictví od roku 2015</p>
             <p>Za kvalitu naší práce ručíme.</p>
-            <button class="button__normal">Přesvědčit se</button>
+            <button onclick="window.location.href='reference.html';" class="button__normal">Přesvědčit se</button>
 
         </article>
         </section>
@@ -154,7 +158,7 @@
     <footer>
         <p class="velky_a_tucny">Plácneme si na váš projekt</p>
         <p>Nezavázně nás kontaktujte a domluvíme vše potřebné</p>
-        <button class="button__footer">Nezávazně poptat</button>
+        <button onclick="window.location.href='kontakt.html';" class="button__footer">Nezávazně poptat</button>
     </footer>
     </body>
 </html>

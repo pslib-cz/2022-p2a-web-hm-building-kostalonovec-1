@@ -57,21 +57,12 @@ img{
 
 header h1{
     position: absolute;
-    bottom: 10%;
+    bottom: 2rem;
     padding: 20px;
-    width: calc(100% - 40px);
     text-align: center;
     color: var(--bg);
 }
 
-header p{
-    position: absolute;
-    bottom: 5%;
-    padding: 20px;
-    width: calc(100% - 40px);
-    text-align: center;
-    color: var(--bg);
-}
 
 header {
     position: relative;
@@ -153,14 +144,13 @@ header{
 
 
 
-    width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .header___main__page{
-    height: 50vh;
+    height: 50rem;
 }
 
 
@@ -210,7 +200,6 @@ label {
 
 input[type=text], select, textarea {
     font-weight: 800;
-    width: 100%;
     padding: 12px;
     border: 1px solid #EB6C27;
     box-sizing: border-box;
