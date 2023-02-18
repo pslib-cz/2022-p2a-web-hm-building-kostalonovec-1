@@ -33,7 +33,7 @@
         margin: 0;
     }
 
-    .article__with__image right{
+    .article__with__image .right{
         grid-column-start: 2;
     }
     .odrazky__oranzove{
