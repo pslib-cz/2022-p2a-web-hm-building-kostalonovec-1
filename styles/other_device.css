@@ -11,7 +11,11 @@
         gap: 1rem;
 
     }
-
+    .image__9{
+    grid-row-end: span 3;
+        grid-row-start: 5;
+        grid-column-start: 1;
+}
 
     .centrovani__textu{
         position: relative;
@@ -90,6 +94,9 @@
     }
     .obrazky__reference > article:hover .overlay p{
         font-size: 15px;
+    }
+    .obrazky__reference > article:hover .overlay .velky_a_tucny{
+        font-size: 25px;
     }
 
 

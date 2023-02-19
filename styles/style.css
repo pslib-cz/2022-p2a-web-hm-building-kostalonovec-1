@@ -298,5 +298,7 @@ form{
 }
 
 .article--reference{
-    gap: 1rem
+    display: grid;
+    gap: 1rem;
+    align-items: flex-end;
 }
