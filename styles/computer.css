@@ -139,6 +139,9 @@
 }
 
 @media (min-width: 961px){
+    .nadpis__h1__other__page{
+        font-size: 4rem;
+    }
     .article--reference{
         grid-template-columns: repeat(3, 1fr);
     }
