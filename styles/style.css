@@ -6,12 +6,14 @@ body
     font-family: "Open Sans", sans-serif;
     margin: 0;
 }
+p{
+    font-size: 1rem;
+}
 :root{
     --primary: #EB6C27;
     --text: #3a3a3a;
     --bg: #FFFFFF;
     --text--gray: #888888;
-
     --mobilni__odsazeni: 1.25rem;
     --tabletove__odsazeni: 1.25rem;
     --maly__notebook__odsaznie: 4rem;
@@ -21,7 +23,7 @@ body
 .article__background__image{
     background: linear-gradient(0deg, rgba(36, 36, 36, 0.8), rgba(36, 36, 36, 0.8)), linear-gradient(180deg, rgba(66, 51, 42, 0.4) 0%, rgba(255, 255, 255, 0) 100%), url(../Media/background-CTAblock-4460w.jpg);
     background-size: cover;
-    min-height: 300px;
+    min-height: 200px;
     color: var(--bg);
 }
 
@@ -90,6 +92,8 @@ header {
     width: 170px;
     height: 41px;
     color: var(--bg);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .button__footer{
@@ -152,7 +156,7 @@ button{
 
 .velky_a_tucny{
     font-weight: bold;
-    font-size: 60px;
+    font-size: 1.3rem;
 }
 
 .span__orange{
@@ -160,6 +164,7 @@ button{
 }
 
 .index__h1{
+    font-size: 2rem;
     color: var(--bg);
     text-align: center;
 }
@@ -169,12 +174,9 @@ button{
 }
 
 
-.velky_a_tucny{
-    font-size: 2em;
-}
 
 .nadpis__h1__other__page{
-    font-size: 60px;
+    font-size: 4rem;
 }
 
 
@@ -182,7 +184,7 @@ label {
     font-weight: 800;
 }
 
-input[type=text], select, textarea {
+input[type=text], select, textarea{
 
     font-weight: 800;
     padding: 12px;
@@ -190,7 +192,12 @@ input[type=text], select, textarea {
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
+    flex: 1;
     resize: vertical
+}
+textarea{
+    /*už jsem vážně nevěděl*/
+    width: 100%;
 }
 
 input[type=submit] {
@@ -227,7 +234,7 @@ input[type=submit]:hover {
     display: flex;
     flex-direction: column;
     gap: 4rem;
-    margin: 3em;
+    margin: 4rem;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -258,4 +265,34 @@ input[type=submit]:hover {
     height: inherit;
     position: relative;
     top: 250px;
+}
+
+figure{
+    margin: 0;
+}
+
+section{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+h2{
+    font-size: 1.25rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.max__text__align{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.max__text__align{
+    padding-bottom: 20px;
+}
+
+.odrazky__oranzove li{
+    padding-top:0.5rem;
 }
