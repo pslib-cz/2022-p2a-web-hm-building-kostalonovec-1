@@ -296,3 +296,7 @@ form{
 .odrazky__oranzove li{
     padding-top:0.5rem;
 }
+
+.article--reference{
+    gap: 1rem
+}
