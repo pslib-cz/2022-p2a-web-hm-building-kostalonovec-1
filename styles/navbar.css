@@ -1,11 +1,12 @@
 nav{
+
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     height: 50px;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding-top: var(--mobilni__odsazeni);
+    padding-bottom: var(--mobilni__odsazeni);
     background-color: var(--bg);
 }
 
@@ -96,7 +97,7 @@ menu > li > a{
     background-color: var(--primary);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 960px) {
     .menu-button-container {
         display: flex;
     }
@@ -146,12 +147,4 @@ menu > li > a{
         right: 20px;
         position: absolute;
     }
-}
-
-@media (min-width: 1920px) {
-    nav{
-        margin: 40px;
-        min-width: calc(100% - 110px);
-    }
-
 }

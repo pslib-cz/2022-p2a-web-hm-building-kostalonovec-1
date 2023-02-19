@@ -11,6 +11,11 @@ body
     --text: #3a3a3a;
     --bg: #FFFFFF;
     --text--gray: #888888;
+
+    --mobilni__odsazeni: 1.25rem;
+    --tabletove__odsazeni: 1.25rem;
+    --maly__notebook__odsaznie: 4rem;
+    --pocitac__odsazeni: 12rem;
 }
 
 .article__background__image{
@@ -21,12 +26,12 @@ body
 }
 
 article{
-    padding: 20px;
+    padding: var(--mobilni__odsazeni);
 }
 
 footer{
     background-color: var(--primary);
-    padding: 20px;
+    padding: var(--mobilni__odsazeni);
     color: var(--bg);
     display: flex;
     align-items: center;
@@ -54,15 +59,6 @@ img{
 
 
 }
-
-header h1{
-    position: absolute;
-    bottom: 2rem;
-    padding: 20px;
-    text-align: center;
-    color: var(--bg);
-}
-
 
 header {
     position: relative;
@@ -128,22 +124,9 @@ header {
     margin-left: -1em;
 }
 
-
-.button__header{
-    font-size: 0;
-
-}
-
-section{
-    padding-bottom: 40px;
-}
-
 header{
     background: linear-gradient(0deg, rgba(36, 36, 36, 0.4), rgba(36, 36, 36, 0.4)), linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #42332A 0%, rgba(255, 255, 255, 0) 100%), url("../Media/pageheader-1920w_mobil.jpg");
     background-blend-mode: normal, normal, hue, normal;
-
-
-
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -177,7 +160,8 @@ button{
 }
 
 .index__h1{
-    font-size: 2em;
+    color: var(--bg);
+    text-align: center;
 }
 
 .button__outline > a{
@@ -199,6 +183,7 @@ label {
 }
 
 input[type=text], select, textarea {
+
     font-weight: 800;
     padding: 12px;
     border: 1px solid #EB6C27;
@@ -221,43 +206,56 @@ input[type=submit]:hover {
     background-color: #c9571a;
 }
 
-.contacts__description::before {
-    position: absolute;
-    content: '';
-    border-radius: 50%;
-    height: 2.5rem;
-    width: 2.5rem;
-    background-color: #EB6C27;
-    left: -3em;
-    top: -0.5em;
-}
 
-.icon-dot::before {
+.icon-dot{
     position: absolute;
-    z-index: 1;
+    top: -1.5rem;
+    left: -4rem;
 }
-/*
 .icon-dot--phone::before {
-    top: -3px;
-    content: url("../images/local_phone_24px.svg");
+    content: url("../Media/icons/phone.svg ");
 
 }
 .icon-dot--mail::before {
-    content: url("../images/mail_24px.svg");
+    content: url("../Media/icons/email.svg");
 }
 .icon-dot--position::before {
-    content: url("../images/room_24px.svg");
-    left: -37px;
-    bottom: -3px;
+    content: url("../Media/icons/map.svg");
 }
-*/
+
 .contact__icons{
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    gap: 4rem;
     margin: 3em;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .contacts__description{
     position: relative;
+}
+
+.image__height{
+    max-height: 307px;
+}
+
+.subheading::before {
+    content: "\A";
+    white-space: pre;
+}
+
+.subheading{
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.button__header{
+    display: none;
+}
+
+.header__items{
+    height: inherit;
+    position: relative;
+    top: 250px;
 }

@@ -14,7 +14,6 @@
     </head>
 
     <body>
-
     <header class="header___main__page">
         <nav>
             <div class="logo">
@@ -27,9 +26,7 @@
                 <div class='menu-button'>
                     <p>menu</p>
                 </div>
-
             </label>
-
             <menu>
                 <li class="li__active"><a class="a__active" href="index.html">Domů</a></li>
                 <li><a href=#sluzby>Služby</a></li>
@@ -38,8 +35,10 @@
                 <li><a href="kontakt.html">Kontakt</a></li>
             </menu>
         </nav>
-
-        <h1 class="index__h1">Hm Building.cz s.r.o <label>Liberecká stavební společnost</label></h1>
+        <div class="header__items">
+        <h1 class="index__h1">Hm Building.cz s.r.o <span class="subheading">Liberecká stavební společnost</span></h1>
+        <button onclick="window.location.href='#sluzby';" class="button__header button__normal">pokračovat</button>
+        </div>
     </header>
 
     <main>
@@ -54,12 +53,16 @@
 
         <article class="article__with__image">
             <aside>
-                <img class="image__left" src="./Media/sluzba-novostavby-1200w.jpg" alt="novostavby">
+                <img srcset="Media/sluzba-novostavby-1200w_mobil.jpg 560w, Media/sluzba-novostavby-1200w_mobil.jpg 1920w"
+                     sizes="(max-width: 800px) 100vw, 800px"
+                     class="image__right image__height"
+                     src="./Media/sluzba-novostavby-1200w.jpg"
+                     alt="novostavby">
             </aside>
             <div class="hlavni_obsah">
             <h2>Novostavby</h2>
             <p>Dle požadavků investora jsme schopní dodat kompletní stavbu na klíč, případně zhotovit ucelenou část. Jsme schopni zajistit také projektovou dokumentaci.</p>
-            <p> Provádíme stavby jak průmyslového typu, tak rodinné stavby.</p>
+            <p> Provádíme stavby jak průmysloého typu, tak rodinné stavby.</p>
                 <button onclick="window.location.href='sluzba_novostavby.html';" class="button__outline">Zobrazit více</button>
             </div>
         </article>
@@ -68,7 +71,7 @@
             <aside>
                 <img srcset="Media/sluzba-prumyslove-stavby-1920w_mobil.jpg 560w, Media/sluzba-prumyslove-stavby-1920w.jpg 1920w"
                      sizes="(max-width: 800px) 100vw, 800px"
-                     class="image__right"
+                     class="image__right image__height"
                      src="./Media/sluzba-prumyslove-stavby-1920w.jpg"
                      alt="průmyslové stavby">
             </aside>
@@ -86,7 +89,7 @@
             <aside>
                 <img srcset="Media/sluzba-rekonstrukce-1920w_mobil.jpg 560w, Media/sluzba-rekonstrukce-1920w.jpg 1920w"
                      sizes="(max-width: 800px) 100vw, 800px"
-                     class="image__left"
+                     class="image__left image__height"
                      src="./Media/sluzba-rekonstrukce-1920w.jpg"
                      alt="rekonstrukce">
             </aside>
@@ -101,7 +104,7 @@
             <aside>
                 <img srcset="Media/sluzba-komunikace-a-zpevnene-plochy-1200w_mobil.jpg 560w, Media/sluzba-komunikace-a-zpevnene-plochy-1200w.jpg 1920w"
                      sizes="(max-width: 800px) 100vw, 800px"
-                     class="image__right"
+                     class="image__right image__height"
                      src="./Media/sluzba-komunikace-a-zpevnene-plochy-1200w.jpg"
                      alt="komunikace">
             </aside>
@@ -134,7 +137,7 @@
             </article>
 
             <div class="obrazky__reference">
-                <article class="centrovani__textu">
+                <article class="centrovani__textu article__reference">
                     <div>
                         <img srcset="Media/reference/reference-hasicska-zbrojnice-600w_mobil.jpg 560w, Media/reference/reference-hasicska-zbrojnice-600w.jpg 1920w"
                              sizes="(max-width: 800px) 100vw, 800px"
@@ -142,13 +145,13 @@
                              alt="prádelna">
                     </div>
                     <a href="reference_hasicska_zbrojnice.html" class="overlay">
-                        <h3>Hasičská zbrojnice</h3>
+                        <p>Hasičská zbrojnice</p>
                         <p>Celková rekonstrukce</p>
                     </a>
 
                 </article>
 
-                <article class="centrovani__textu">
+                <article class="centrovani__textu article__reference">
                     <div>
                         <img srcset="Media/reference/reference-pradelna-600w_mobil.jpg 560w, Media/reference/reference-pradelna-600w.jpg 1920w"
                              sizes="(max-width: 800px) 100vw, 800px"
@@ -156,12 +159,12 @@
                              alt="prádelna">
                     </div>
                     <a href="reference_samoobluzna_prace.html" class="overlay">
-                        <h3>Samoobslužná prádelna</h3>
+                        <p>Samoobslužná prádelna</p>
                         <p>Celková rekonstrukce</p>
                     </a>
                 </article>
 
-                <article class="centrovani__textu">
+                <article class="centrovani__textu article__reference">
                     <div>
                         <img srcset="Media/reference/reference-plocha-600w_mobil.jpg 560w, Media/reference/reference-plocha-600w.jpg 1920w"
                              sizes="(max-width: 800px) 100vw, 800px"
@@ -169,7 +172,7 @@
                              alt="plochy">
                     </div>
                     <a href="reference_venkovsni_plochy.html" class="overlay">
-                        <h3>Venkovní plochy restyl</h3>
+                        <p>Venkovní plochy restyl</p>
                         <p>Celková rekonstrukce</p>
                     </a>
                 </article>
